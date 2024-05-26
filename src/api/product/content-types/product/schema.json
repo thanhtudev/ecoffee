@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ingredient.ingredient"
+    },
+    "ingredient_quantity": {
+      "displayName": "Ingredients-Quantity",
+      "type": "component",
+      "repeatable": true,
+      "component": "ingredients-quantity.ingredients-quantity"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ingredients_quantity_ingredients_quantities",
+  "info": {
+    "displayName": "Ingredients-Quantity",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ingredient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ingredient.ingredient"
+    },
+    "quantity": {
+      "type": "float"
+    }
+  }
+}
