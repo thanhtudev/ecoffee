@@ -14,12 +14,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "quantity": {
-      "type": "float"
-    },
-    "unit": {
-      "type": "string"
     }
   }
 }

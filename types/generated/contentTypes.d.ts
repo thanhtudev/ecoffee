@@ -801,8 +801,6 @@ export interface ApiIngredientIngredient extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String;
-    quantity: Attribute.Float;
-    unit: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
