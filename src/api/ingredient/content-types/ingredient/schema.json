@@ -17,6 +17,9 @@
     },
     "quantity": {
       "type": "float"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }

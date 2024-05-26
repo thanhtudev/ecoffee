@@ -15,10 +15,11 @@
     "name": {
       "type": "string"
     },
-    "ingredients": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::ingredient.ingredient"
+    "ingredient": {
+      "displayName": "ingredient",
+      "type": "component",
+      "repeatable": true,
+      "component": "ingredient.ingredient"
     }
   }
 }

@@ -802,6 +802,7 @@ export interface ApiIngredientIngredient extends Schema.CollectionType {
   attributes: {
     unit: Attribute.String;
     quantity: Attribute.Float;
+    name: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -833,11 +834,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String;
-    ingredients: Attribute.Relation<
-      'api::product.product',
-      'oneToMany',
-      'api::ingredient.ingredient'
-    >;
+    ingredient: Attribute.Component<'ingredient.ingredient', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

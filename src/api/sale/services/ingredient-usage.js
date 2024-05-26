@@ -6,7 +6,7 @@ module.exports = {
       filters: { date },
       populate: {
         product: {
-          populate: ['ingredient_quantity.ingredient']
+          populate: ['ingredient.ingredient']
         }
       }
     });
@@ -14,12 +14,11 @@ module.exports = {
     let ingredientsUsage = {};
 
     for (let sale of sales) {
-      if (!sale.product || !sale.product.ingredient_quantity) {
+      if (!sale.product || !sale.product.ingredient) {
         continue;
       }
 
-      const ingredientQuantities = sale.product.ingredient_quantity;
-
+      const ingredientQuantities = sale.product.ingredient;
       for (let ingredientQuantity of ingredientQuantities) {
         if (!ingredientQuantity.ingredient || !ingredientQuantity.ingredient.id) {
           continue;
