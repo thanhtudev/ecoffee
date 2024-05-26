@@ -19,12 +19,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::ingredient.ingredient"
-    },
-    "ingredient_quantity": {
-      "displayName": "Ingredients-Quantity",
-      "type": "component",
-      "repeatable": true,
-      "component": "ingredient-quantity.ingredients-quantity"
     }
   }
 }

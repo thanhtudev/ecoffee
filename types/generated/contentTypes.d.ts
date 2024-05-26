@@ -838,10 +838,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'oneToMany',
       'api::ingredient.ingredient'
     >;
-    ingredient_quantity: Attribute.Component<
-      'ingredient-quantity.ingredients-quantity',
-      true
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
