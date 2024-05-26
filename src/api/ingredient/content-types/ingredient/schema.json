@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "unit": {
+    "name": {
       "type": "string"
     },
     "quantity": {
       "type": "float"
     },
-    "name": {
+    "unit": {
       "type": "string"
     }
   }
