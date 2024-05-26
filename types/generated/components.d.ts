@@ -1,15 +1,15 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface IngredientsQuantityIngredientsQuantity
+export interface IngredientQuantityIngredientsQuantity
   extends Schema.Component {
   collectionName: 'components_ingredients_quantity_ingredients_quantities';
   info: {
-    displayName: 'Ingredients-Quantity';
+    displayName: 'Ingredient';
     description: '';
   };
   attributes: {
     ingredient: Attribute.Relation<
-      'ingredients-quantity.ingredients-quantity',
+      'ingredient-quantity.ingredients-quantity',
       'oneToOne',
       'api::ingredient.ingredient'
     >;
@@ -20,7 +20,7 @@ export interface IngredientsQuantityIngredientsQuantity
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'ingredients-quantity.ingredients-quantity': IngredientsQuantityIngredientsQuantity;
+      'ingredient-quantity.ingredients-quantity': IngredientQuantityIngredientsQuantity;
     }
   }
 }

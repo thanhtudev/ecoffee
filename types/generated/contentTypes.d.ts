@@ -793,13 +793,13 @@ export interface ApiIngredientIngredient extends Schema.CollectionType {
   info: {
     singularName: 'ingredient';
     pluralName: 'ingredients';
-    displayName: 'Ingredients';
+    displayName: 'Ingredient';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.String;
     unit: Attribute.String;
     quantity: Attribute.Float;
     createdAt: Attribute.DateTime;
@@ -839,7 +839,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'api::ingredient.ingredient'
     >;
     ingredient_quantity: Attribute.Component<
-      'ingredient-quantity.ingredient-quantity',
+      'ingredient-quantity.ingredients-quantity',
       true
     >;
     createdAt: Attribute.DateTime;

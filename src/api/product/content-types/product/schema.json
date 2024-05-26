@@ -24,7 +24,7 @@
       "displayName": "Ingredients-Quantity",
       "type": "component",
       "repeatable": true,
-      "component": "ingredients-quantity.ingredients-quantity"
+      "component": "ingredient-quantity.ingredients-quantity"
     }
   }
 }
